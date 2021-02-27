@@ -24,8 +24,8 @@ import re                       # for regular expressions
 from glob import glob           # for pathname matching
 from collections import Counter  # for counting elements in an array
 
-import unixlike                 # some implemented unixlike commands
-from utils.corruptxvg import *
+from . import unixlike                 # some implemented unixlike commands
+from .utils.corruptxvg import *
 #=========================================================================
 # FUNCTIONS: This is the Gromacs dhdl.xvg file parser.
 #=========================================================================
