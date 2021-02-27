@@ -34,7 +34,7 @@ from optparse import OptionParser  # for parsing command-line options
 import os                           # for os interface
 import time as ttt_time             # for timing
 import pdb                          # for debugging
-from utils.zeroxvg import *
+from .utils.zeroxvg import *
 #=========================================================================
 # INPUT OPTIONS
 #=========================================================================
@@ -1369,7 +1369,7 @@ def main():
         from matplotlib.font_manager import FontProperties as FP
 
     if P.software.title() == 'Gromacs':
-        import parser_gromacs
+        from . import parser_gromacs
         nsnapshots, lv, dhdlt, u_klt = parser_gromacs.readDataGromacs(P)
     elif P.software.title() == 'Sire':
         import parser_sire
