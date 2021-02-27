@@ -385,7 +385,7 @@ def estimatewithMBAR(u_kln, N_k, reltol, regular_estimate=False):
     if regular_estimate:
         if P.overlap:
             print("The overlap matrix is...")
-            O = MBAR.computeOverlap()[2]
+            O = MBAR.computeOverlap()['matrix']
             for k in range(K):
                 line = ''
                 for l in range(K):
